@@ -1,0 +1,7 @@
+{
+    "author_name": [""],
+    "first_publish_year": "",
+    "key": "",
+    "language": "",
+    "title": ""
+}
