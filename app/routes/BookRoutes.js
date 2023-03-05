@@ -1,4 +1,4 @@
-import * as DAO from "./controllers.js"
+import * as DAO from "../controllers/BookController.js"
 
 export default (app) => {
     app.post("/create", DAO.create);
@@ -20,8 +20,8 @@ export default (app) => {
     app.get("/books/sort/title", DAO.sortTitle);
     app.get("/books/sort/year", DAO.sortYear);
     //3. Пошук
-    //  a. Пошук всіх книг, які були написані :автором
-    //  б. Пошук всіх книг, назва яких починається з :префіксу
+    //  a. Пошук всіх книг, які були написані автором
+    //  б. Пошук всіх книг, назва яких починається з префіксу
     app.get("/books/search/author", DAO.findAuthor);
     app.get("/books/search/title", DAO.findTitle);
 
